@@ -9,3 +9,8 @@
   cursor: pointer;
   transition: background 1s;
 }
+
+.button:hover {
+  background-color: var(--primary-color);
+  color: var(--primary-color-contrast);
+}
