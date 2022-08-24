@@ -1,0 +1,8 @@
+.characters#bottom-characters {
+  height: 500px;
+  transform: rotate(180deg) scaleX(-1);
+  background-color: var(--character-bottom-image-color);
+  mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
+  -webkit-mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
+  position: relative;
+}

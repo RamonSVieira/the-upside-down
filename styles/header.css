@@ -43,11 +43,7 @@ header::before {
   color: var(--primary-color);
 }
 
-.characters {
-  width: 100%;
-  max-width: 900px;
-  position: absolute;
-
+.characters#top-characters {
   height: 100%;
   background-color: var(--character-top-image-color);
   mask: var(--character-top-image-src) bottom / contain no-repeat;

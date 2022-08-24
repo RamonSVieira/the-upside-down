@@ -13,4 +13,12 @@ li {
 
 * {
   box-sizing: border-box;
+  transition: 1s;
+}
+
+.characters {
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  position: absolute;
 }
