@@ -1,0 +1,37 @@
+footer {
+  background-color: var(--footer-background-color);
+  overflow: hidden;
+  position: relative;
+}
+
+footer::before,
+footer::after {
+  content: "";
+  width: 300px;
+  height: 200px;
+  background: url("../images/footer/tape.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -50px;
+}
+
+footer:before {
+  left: -50px;
+  transform: rotateZ(-10deg);
+}
+
+footer::after {
+  right: -50px;
+  transform: rotateZ(10deg);
+}
+
+footer .container {
+  justify-content: center;
+  padding: 80px 0;
+}
+
+footer p {
+  max-width: 500px;
+  text-align: center;
+  z-index: 2;
+}

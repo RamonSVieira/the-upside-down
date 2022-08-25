@@ -46,7 +46,7 @@ section {
 }
 
 #section-stranger-things-trailer .video-frame {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   background-color: var(--primary-color);
@@ -73,4 +73,120 @@ section {
 
 #section-stranger-things-trailer .section-texts h2 {
   max-width: 425px;
+}
+
+#section-stranger-thins-gallery {
+  background: var(--background-lamp-image) 120% / 50% no-repeat;
+  justify-content: flex-start;
+}
+
+#section-stranger-thins-gallery .container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#section-stranger-thins-gallery .container h2 {
+  max-width: 800px;
+  margin-bottom: 80px;
+}
+
+#section-stranger-thins-gallery ul {
+  display: flex;
+  gap: 50px;
+  padding-left: 20px;
+}
+
+#section-stranger-thins-gallery ul li {
+  width: 250px;
+  height: 250px;
+  outline: 20px solid var(--highlight-color);
+  border: 3px solid var(--primary-color);
+  box-sizing: initial;
+}
+
+#section-stranger-thins-gallery ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#section-form .container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+#section-form h2 {
+  max-width: 20ch;
+  text-align: center;
+}
+
+#section-form p {
+  text-align: center;
+}
+
+#section-form .form-content {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#section-form .form-content h3 {
+  max-width: 400px;
+  color: var(--highlight-color);
+}
+
+#section-form .form-content h3 span {
+  color: var(--primary-color);
+}
+
+#section-form .form-content form {
+  flex-basis: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  background-color: var(--primary-color);
+  color: var(--primary-color-contrast);
+  text-align: left;
+
+  position: relative;
+}
+
+#section-form .form-content form::after {
+  content: "";
+  background-color: var(--highlight-color);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: -1;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  margin-bottom: 24px;
+  border: 2px solid var(--primary-color-contrast);
+  background-color: var(--field-background-color);
+  color: var(--primary-color-contrast);
+  padding: 8px;
+}
+
+input[type="submit"] {
+  align-self: center;
+  border: none;
+  background-color: var(--field-background-color);
+  color: var(--primary-color-contrast);
+  max-width: 300px;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary-color-contrast);
+  color: var(--field-background-color);
 }

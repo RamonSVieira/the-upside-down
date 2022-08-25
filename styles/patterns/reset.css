@@ -11,12 +11,21 @@ li {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 * {
   box-sizing: border-box;
   transition: 1s;
 }
 
+section {
+  width: 100%;
+}
+
 .container {
+  margin: auto;
   max-width: 1200px;
 }
 
