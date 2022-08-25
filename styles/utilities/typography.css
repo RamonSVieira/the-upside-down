@@ -1,3 +1,11 @@
 .font-1p {
   font: 400 1rem/1.25 "Libre Baskerville";
+  color: var(--highlight-color);
+}
+
+.font-2x {
+  font: 900 3rem/1.2 var(--featured-font-family);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }

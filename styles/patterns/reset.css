@@ -16,6 +16,10 @@ li {
   transition: 1s;
 }
 
+.container {
+  max-width: 1200px;
+}
+
 .characters {
   margin: auto;
   width: 100%;

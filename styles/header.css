@@ -36,6 +36,7 @@ header::before {
 
 .header-content p {
   margin: 30px 0 50px;
+  color: var(--highlight-color);
 }
 
 .header-content button {
