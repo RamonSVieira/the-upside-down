@@ -42,6 +42,7 @@ header::before {
 .header-content button {
   border: 3px solid var(--primary-color);
   color: var(--primary-color);
+  letter-spacing: 5px;
 }
 
 .characters#top-characters {
