@@ -129,6 +129,7 @@ section {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #section-form .form-content h3 {
@@ -189,4 +190,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: var(--primary-color-contrast);
   color: var(--field-background-color);
+}
+
+.dark-theme img,
+.dark-theme .header-content p {
+  transform: rotateZ(180deg) scaleX(-1);
 }
