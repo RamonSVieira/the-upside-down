@@ -144,6 +144,8 @@ section {
 #section-form .form-content form {
   flex-basis: 50%;
 
+  margin-right: 24px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,7 +181,7 @@ textarea {
   padding: 8px;
 }
 
-input[type="submit"] {
+input[type="button"] {
   align-self: center;
   border: none;
   background-color: var(--field-background-color);
@@ -187,7 +189,7 @@ input[type="submit"] {
   max-width: 300px;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
   background-color: var(--primary-color-contrast);
   color: var(--field-background-color);
 }
