@@ -27,11 +27,38 @@ footer::after {
 
 footer .container {
   justify-content: center;
-  padding: 80px 0;
+  padding-block: 80px;
 }
 
 footer p {
   max-width: 500px;
   text-align: center;
   z-index: 2;
+}
+
+@media (max-width: 1000px) {
+  footer:before {
+    left: -100px;
+  }
+
+  footer::after {
+    right: -100px;
+  }
+}
+
+@media (max-width: 800px) {
+  footer:before {
+    left: -200px;
+  }
+
+  footer::after {
+    right: -200px;
+  }
+}
+
+@media (max-width: 800px) {
+  footer:before,
+  footer::after {
+    display: none;
+  }
 }

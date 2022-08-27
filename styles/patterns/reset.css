@@ -20,6 +20,12 @@ ul {
   transition: 1s;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
 section {
   width: 100%;
 }
@@ -27,7 +33,10 @@ section {
 .container {
   margin: auto;
   max-width: 1200px;
-  padding: 40px;
+  padding-inline: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .characters {
@@ -35,4 +44,11 @@ section {
   width: 100%;
   max-width: 900px;
   position: absolute;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+  }
 }

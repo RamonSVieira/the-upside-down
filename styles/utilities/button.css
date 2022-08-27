@@ -14,3 +14,9 @@
   background-color: var(--primary-color);
   color: var(--primary-color-contrast);
 }
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 0.9rem;
+  }
+}

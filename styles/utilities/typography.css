@@ -9,3 +9,13 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 }
+
+@media (max-width: 600px) {
+  .font-1p {
+    font-size: 0.85rem;
+  }
+
+  .font-2x {
+    font-size: 2rem;
+  }
+}

@@ -53,3 +53,15 @@ header::before {
 
   bottom: -3px;
 }
+
+@media (max-width: 600px) {
+  header {
+    min-height: 700px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    min-height: 580px;
+  }
+}

@@ -30,12 +30,6 @@ section {
   margin-bottom: 80px;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .container .section-texts {
   width: 50%;
 }
@@ -46,7 +40,9 @@ section {
 }
 
 #section-stranger-things-trailer .video-frame {
-  width: 40%;
+  width: 500px;
+  height: 300px;
+  margin: auto;
   display: flex;
   justify-content: center;
   background-color: var(--primary-color);
@@ -64,6 +60,7 @@ section {
 }
 
 #section-stranger-things-trailer .section-texts {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -90,10 +87,17 @@ section {
   margin-bottom: 80px;
 }
 
+#section-stranger-thins-gallery .container div {
+  width: 100%;
+  overflow: auto;
+}
+
 #section-stranger-thins-gallery ul {
   display: flex;
   gap: 50px;
-  padding-left: 20px;
+  width: fit-content;
+  padding-block: 20px;
+  padding-inline: 20px;
 }
 
 #section-stranger-thins-gallery ul li {
@@ -142,6 +146,8 @@ section {
 }
 
 #section-form .form-content form {
+  width: 100%;
+
   flex-basis: 50%;
 
   margin-right: 24px;
@@ -203,4 +209,44 @@ input[type="button"]:hover {
 .dark-theme h3 {
   letter-spacing: 5px;
   font-weight: normal;
+}
+
+@media (max-width: 800px) {
+  .container .section-texts {
+    width: 100%;
+    text-align: center;
+  }
+
+  #section-stranger-things-trailer .section-texts {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  #section-form .form-content {
+    flex-direction: column;
+  }
+
+  #section-form .form-content h3 {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .characters#bottom-characters {
+    height: 350px;
+  }
+
+  #section-stranger-things-trailer .video-frame {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  #section-stranger-things-trailer .video-frame {
+    width: 200px;
+    height: 100px;
+  }
 }
