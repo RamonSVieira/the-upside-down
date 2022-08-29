@@ -200,6 +200,46 @@ input[type="button"]:hover {
   color: var(--field-background-color);
 }
 
+.container-message-form {
+  margin: 30px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  transition: 1s;
+
+  opacity: 1;
+  transform: translateX(400px);
+}
+
+.container-message-form.sucess {
+  transform: translateX(0px);
+}
+
+.message-form {
+  display: block;
+  padding: 20px;
+
+  background-color: var(--primary-color);
+  color: var(--primary-color-contrast);
+
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.message-form::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--highlight-color);
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: -2;
+}
+
 .dark-theme img,
 .dark-theme .header-content p {
   transform: rotateZ(180deg) scaleX(-1);
