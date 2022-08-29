@@ -1,23 +1,26 @@
 header {
   background-color: var(--header-background-color);
 
-  position: relative;
-
   min-height: 850px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  position: relative;
 }
 
 header::before {
   content: "";
   height: 100%;
   width: 100%;
-  position: absolute;
+
   background-image: url("../images/background/florest.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 90%;
+
+  position: absolute;
+
   filter: saturate(0);
   opacity: 0.2;
 }

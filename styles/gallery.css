@@ -1,0 +1,43 @@
+#section-stranger-thins-gallery {
+  background: var(--background-lamp-image) 120% / 50% no-repeat;
+  justify-content: flex-start;
+}
+
+#section-stranger-thins-gallery .container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#section-stranger-thins-gallery .container h2 {
+  max-width: 800px;
+  margin-bottom: 80px;
+}
+
+#section-stranger-thins-gallery .container div {
+  width: 100%;
+  overflow: auto;
+}
+
+#section-stranger-thins-gallery ul {
+  width: fit-content;
+  padding: 20px;
+
+  display: flex;
+  gap: 50px;
+}
+
+#section-stranger-thins-gallery ul li {
+  width: 250px;
+  height: 250px;
+
+  outline: 20px solid var(--highlight-color);
+  border: 3px solid var(--primary-color);
+
+  box-sizing: initial;
+}
+
+#section-stranger-thins-gallery ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

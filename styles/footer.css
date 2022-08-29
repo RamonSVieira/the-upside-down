@@ -9,8 +9,10 @@ footer::after {
   content: "";
   width: 300px;
   height: 200px;
+
   background: url("../images/footer/tape.svg") no-repeat;
   background-size: contain;
+
   position: absolute;
   bottom: -50px;
 }

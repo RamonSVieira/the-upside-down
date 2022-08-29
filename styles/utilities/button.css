@@ -1,11 +1,11 @@
 .button {
   padding: 16px 32px;
+
   background-color: transparent;
-  font-weight: 900;
-  font-family: var(--featured-font-family);
-  font-size: 1.25rem;
-  line-height: 1.1;
+
+  font: 900 1.25rem/1.1 var(--featured-font-family);
   text-transform: uppercase;
+
   cursor: pointer;
   transition: color 0.6s, background 0.6s;
 }
